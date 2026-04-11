@@ -187,7 +187,7 @@ nav.site-nav .nav-inner {
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 40px;
+  gap: 28px;
   align-items: end;
 }
 
@@ -202,7 +202,7 @@ nav.site-nav .nav-inner {
 
 .hero-photo {
   position: relative;
-  width: clamp(240px, 28vw, 380px);
+  width: clamp(210px, 23vw, 310px);
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 18px;
@@ -797,7 +797,7 @@ footer.site-footer {
     gap: 40px;
   }
   .hero-photo {
-    width: clamp(200px, 55vw, 300px);
+    width: clamp(180px, 50vw, 250px);
     order: -1;
   }
   .hero-name { font-size: clamp(72px, 18vw, 140px); }
