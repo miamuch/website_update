@@ -281,7 +281,7 @@ nav.site-nav .nav-inner {
 .about-text p {
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.78;
   color: var(--black);
   max-width: 660px;
@@ -297,7 +297,7 @@ nav.site-nav .nav-inner {
 .pull-quote p {
   font-family: var(--font-sans) !important;
   font-weight: 600 !important;
-  font-size: 19px !important;
+  font-size: 18px !important;
   line-height: 1.5 !important;
   color: var(--black) !important;
   font-style: italic;
@@ -497,13 +497,13 @@ footer.site-footer {
 
 /* ── INNER PAGE HERO ── */
 .page-hero {
-  padding: 72px 0 56px;
+  padding: 60px 0 46px;
   border-bottom: 1px solid var(--gray-100);
 }
 .page-hero h1 {
   font-family: var(--font-sans);
   font-weight: 900;
-  font-size: clamp(52px, 9vw, 120px);
+  font-size: clamp(42px, 7vw, 88px);
   letter-spacing: -0.06em;
   line-height: 0.88;
   color: var(--black);
@@ -542,7 +542,7 @@ footer.site-footer {
 .pub-item h3 {
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.35;
   letter-spacing: -0.02em;
   margin-bottom: 6px;
@@ -671,7 +671,7 @@ footer.site-footer {
 .contact-info h2 {
   font-family: var(--font-sans);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: -0.04em;
   margin-bottom: 20px;
 }
@@ -737,7 +737,7 @@ footer.site-footer {
 .article-title {
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: -0.02em;
   line-height: 1.35;
   transition: color 0.15s;
@@ -772,7 +772,7 @@ footer.site-footer {
 .media-meta h3 {
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   line-height: 1.35;
   margin-bottom: 4px;
