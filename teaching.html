@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Teaching</h1>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-tag">Instructor of Record</div>
+          <h3>Intro to American Government</h3>
+          <p>A survey of American political institutions, behavior, and policy. Covers the Constitution, Congress, the Presidency, the courts, public opinion, voting, and media.</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-tag">Instructor of Record</div>
+          <h3>Identity Politics</h3>
+          <p>Explores how race, gender, sexuality, and class shape political identity, mobilization, and representation. Engages with intersectionality as both theory and empirical method.</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-tag">Instructor of Record</div>
+          <h3>Research Methods for Social Science</h3>
+          <p>An introduction to quantitative and computational research methods in political science, including survey design, regression analysis, and text-as-data approaches.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+    function copyEmail() {
+      navigator.clipboard.writeText('m.much@nyu.edu').then(() => {
+        const t = document.getElementById('toast');
+        if (t) { t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
+      });
+    }
+  </script>
+</body>
+</html>

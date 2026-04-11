@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html" class="active">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Media &amp;<br>Public Engagement</h1>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="about-grid" style="margin-bottom: 56px;">
+        <div class="about-label">selected appearances.</div>
+        <div class="about-text">
+          <p>I am available for media commentary and public writing on political psychology, social media, gender and politics, the podcast ecosystem, and American political behavior. Please <a href="contact.html" style="border-bottom: 1px solid currentColor;">get in touch</a> for inquiries.</p>
+        </div>
+      </div>
+
+      <!-- ─── WRITTEN PIECES ─── -->
+      <div class="section-header">
+        <span class="section-title">Written Pieces</span>
+      </div>
+
+      <!-- Slate -->
+      <a class="article-card" href="https://slate.com/news-and-politics/2026/01/gen-z-manosphere-millennials-progressive-trump.html" target="_blank" rel="noopener">
+        <div class="article-thumb">
+          <img src="assets/slate-thumb.png" alt="Gen Z Is More Progressive Than Millennials, Except in One Crucial Way">
+        </div>
+        <div class="article-body">
+          <div class="article-outlet">Slate Magazine · Jan 2026</div>
+          <div class="article-title">Gen Z Is More Progressive Than Millennials, Except in One Crucial Way</div>
+          <div class="article-byline">Featured in Slate Magazine</div>
+          <div class="article-arrow">Read ↗</div>
+        </div>
+      </a>
+
+      <!-- Good Authority -->
+      <a class="article-card" href="https://goodauthority.org/news/podcasts-joe-rogan-of-the-left-right-and-center-is-just-joe-rogan/" target="_blank" rel="noopener">
+        <div class="article-thumb">
+          <img src="assets/featured.png" alt="The Joe Rogan of the left, right, and center is just ... Joe Rogan">
+        </div>
+        <div class="article-body">
+          <div class="article-outlet">Good Authority · Dec 17, 2025</div>
+          <div class="article-title">The Joe Rogan of the left, right, and center is just&nbsp;… Joe Rogan</div>
+          <div class="article-byline">Melina Much, Kylan Rutherford, Jonathan Nagler, and Joshua A. Tucker</div>
+          <div class="article-arrow">Read ↗</div>
+        </div>
+      </a>
+
+      <!-- ─── MENTIONS ─── -->
+      <div class="section-header" style="margin-top: 64px;">
+        <span class="section-title">Mentions</span>
+      </div>
+
+      <!-- AP News -->
+      <a class="article-card" href="https://apnews.com/article/rfk-jr-kennedy-podcast-hhs-secretary-trump-d097d0f51a17618d78d2f2a15a068ba5" target="_blank" rel="noopener">
+        <div class="article-thumb">
+          <img src="assets/ap-thumb.png" alt="RFK Jr is launching a podcast to expose 'lies' that have made Americans sick">
+        </div>
+        <div class="article-body">
+          <div class="article-outlet">AP News · 2026</div>
+          <div class="article-title">RFK Jr is launching a podcast to expose 'lies' that have made Americans sick</div>
+          <div class="article-byline">Associated Press</div>
+          <div class="article-arrow">Read ↗</div>
+        </div>
+      </a>
+
+      <div class="media-list" style="margin-top: 0;">
+        <div class="media-item">
+          <div class="media-item-header">
+            <div class="pub-year">2025</div>
+            <div class="media-meta">
+              <h3>Should Harris have gone on Rogan? How ideologically consistent is the podcast "manosphere?"</h3>
+              <div class="outlet">American Friction · Spotify · Feb 8, 2025</div>
+            </div>
+          </div>
+          <div class="spotify-embed">
+            <iframe
+              src="https://open.spotify.com/embed/episode/16UyLj3QoEZ4GSoeoqux0P?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+    function copyEmail() {
+      navigator.clipboard.writeText('m.much@nyu.edu').then(() => {
+        const t = document.getElementById('toast');
+        if (t) { t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
+      });
+    }
+  </script>
+</body>
+</html>

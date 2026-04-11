@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html" class="active">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="container">
+      <h1>About</h1>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="about-grid">
+        <div class="about-label">early context &amp; home.</div>
+        <div class="about-text">
+          <p>I grew up in rural San Diego County in a family that did not orbit universities. Neither of my parents had four-year degrees. Most adults I knew worked in trades, small businesses, or service jobs. Academia was not an inherited language in my household. It was something I encountered later and had to learn from the outside in.</p>
+          <div class="pull-quote"><p>Academia was not an inherited language in my household. It was something I encountered later and had to learn from the outside in.</p></div>
+          <p>This first generation academic frame situates a lot of my research, as I spend lots of time with folks who don't have college degrees, and I spend a lot of time learning and generating ideas.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">formative political years.</div>
+        <div class="about-text">
+          <p>Politics in my house was not abstract. My mother was liberal. My father was politically conservative but socially progressive in ways shaped by his Christian faith. They disagreed sharply on policy but shared a moral seriousness about fairness and responsibility.</p>
+          <div class="pull-quote"><p>I grew up in a home where disagreement was expected but contempt was not.</p></div>
+          <p>I spent a lot of my formative years listening to this political tension in the household — specifically getting curious about how people navigate and communicate complicated political ideas.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">soccer career.</div>
+        <div class="about-text">
+          <p>Before I entered academia, my entire life revolved around soccer. I was a part of the early era of the ACL epidemic that plagues women's sports. I tore my ACL three times before finishing high school. My first surgery, in eighth grade, was botched by a surgeon who did not take a young woman's athletic career seriously. Over time, I came to understand that this was not simply an individual failure.</p>
+          <div class="pull-quote"><p>It reflected broader assumptions about whose bodies and ambitions institutions take seriously.</p></div>
+          <p>I kept rebuilding and returned to play college soccer at a small four-year school that would still grant me a scholarship despite the injuries I had faced. This is how a kid born and raised in San Diego ended up at a state school all the way in Florence, South Carolina.</p>
+          <br>
+          <p>My soccer experience taught me lessons integral to my research — specifically around gender-based inequality, and persistence.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">what I study now.</div>
+        <div class="about-text">
+          <p>I sit on the cusp between millennial and Gen Z. I watched the early internet become the platform environment we now inhabit. I watched friends and neighbors drift into online spaces that felt less like communities and more like pipelines. I saw how media ecosystems could reshape identity, grievance, belonging, and political attachment in real time.</p>
+          <br>
+          <p>Today my research asks how digital media environments structure political identity and behavior. I study podcasts, gendered media spaces, ideological cues, and the subtle ways that political content travels through entertainment rather than explicitly political channels. My work combines large-scale computational text analysis with survey-trace data and intersectional modeling. I build pipelines that process tens of thousands of episodes and link them to audience data. I treat identity not as a checkbox but as a context-dependent, relational construct that shifts across environments.</p>
+          <div class="pull-quote"><p>I am interested in how people navigate systems that were not designed with their best interests in mind.</p></div>
+          <p>Because I did not grow up inside academic institutions, I care deeply about making research legible beyond them. I strive to write for public audiences and in academic pieces write as accessibly as possible while maintaining technical precision.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">CV.</div>
+        <div class="about-text">
+          <a class="pill" href="assets/much_CV_1_20_26.pdf" target="_blank" rel="noopener" style="display:inline-flex;">Download CV ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+    function copyEmail() {
+      navigator.clipboard.writeText('m.much@nyu.edu').then(() => {
+        const t = document.getElementById('toast');
+        if (t) { t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
+      });
+    }
+  </script>
+</body>
+</html>

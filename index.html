@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melina Much, PhD</title>
+  <meta name="description" content="Postdoctoral fellow at NYU's Center for Social Media and Politics. Researcher in political psychology, social media, and gendered media spaces.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <h1 class="hero-name">MELINA<br>MUCH</h1>
+          <div class="hero-meta">
+            <button class="pill" onclick="copyEmail()">
+              m.much@nyu.edu
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+            <a class="pill" href="assets/much_CV_1_20_26.pdf" target="_blank" rel="noopener">CV ↗</a>
+            <a class="pill" href="about.html">About</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/avatar.jpg" alt="Melina Much" width="760" height="950">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-label">about.</div>
+        <div class="about-text">
+          <p>I am a postdoctoral fellow for NYU's Center for Social Media and Politics and a Siegel Research Fellow for the Siegel Family Endowment. I attained my PhD in Political Science from the University of California, Irvine in 2024. I was also a visiting Ph.D. student with the Alvarez Lab at California Institute of Technology.</p>
+          <br>
+          <p>For CSMaP, I specialize in the intersection of political psychology, survey methodologies, and social media in the American context. In addition, I work on questions of identity politics and statistical methodologies to study intersectionality. I have also worked on questions of gender-based mobilization on social media during the #MeToo era and in the wake of <em>Dobbs v. Jackson</em>.</p>
+          <br>
+          <p>My latest project centers on what I call <em>gendered media spaces</em> — digital information environments that form around masculine and feminine audience characteristics and preferences, leading men and women to be exposed to different sorts of political content. I show particularly how in the podcast ecosystem, this leads to tangible impacts on vote choice and political attitudes.</p>
+          <br>
+          <p>I am available for media commentary and public writing on these topics. Outside of work, I'm a former collegiate soccer player, avid lifter, mountain biker, and Dungeons &amp; Dragons enthusiast. I enjoy long talks about women's soccer and anything San Diego (my hometown).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA APPEARANCES -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-title">selected appearances.</span>
+        <a href="media.html" class="show-more">See All</a>
+      </div>
+
+      <!-- Article cards row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-bottom:2px;">
+
+        <a class="article-card" href="https://apnews.com/article/rfk-jr-kennedy-podcast-hhs-secretary-trump-d097d0f51a17618d78d2f2a15a068ba5" target="_blank" rel="noopener" style="padding:28px; background:var(--warm); border-bottom:none;">
+          <div class="article-thumb">
+            <img src="assets/ap-thumb.png" alt="RFK Jr is launching a podcast to expose lies that have made Americans sick">
+          </div>
+          <div class="article-body">
+            <div class="article-outlet">AP News · 2026</div>
+            <div class="article-title">RFK Jr is launching a podcast to expose 'lies' that have made Americans sick</div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-top:12px;">
+              <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); background:var(--gray-50); padding:3px 8px; border-radius:4px;">Mention</span>
+              <span class="article-arrow">Read ↗</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="article-card" href="https://slate.com/news-and-politics/2026/01/gen-z-manosphere-millennials-progressive-trump.html" target="_blank" rel="noopener" style="padding:28px; background:var(--warm); border-bottom:none;">
+          <div class="article-thumb">
+            <img src="assets/slate-thumb.png" alt="Gen Z Is More Progressive Than Millennials, Except in One Crucial Way">
+          </div>
+          <div class="article-body">
+            <div class="article-outlet">Slate · Jan 2026</div>
+            <div class="article-title">Gen Z Is More Progressive Than Millennials, Except in One Crucial Way</div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-top:12px;">
+              <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); background:var(--accent-light); padding:3px 8px; border-radius:4px;">My Writing</span>
+              <span class="article-arrow">Read ↗</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Spotify embed -->
+      <div style="background:var(--warm); padding:28px 32px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px;">
+          <span class="article-outlet">American Friction · Spotify · Feb 2025</span>
+        </div>
+        <p style="font-family:var(--font-sans); font-weight:700; font-size:15px; letter-spacing:-0.01em; margin-bottom:16px; line-height:1.4;">Should Harris have gone on Rogan? How ideologically consistent is the podcast "manosphere?"</p>
+        <iframe src="https://open.spotify.com/embed/episode/16UyLj3QoEZ4GSoeoqux0P?utm_source=generator&theme=0"
+          width="100%" height="152" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy" style="border-radius:10px; display:block;">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-cta-label">Connect</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+          <div class="pulse-wrap">
+            <span class="pulse-dot"></span>
+            Available for media commentary &amp; public writing
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Copied to clipboard</div>
+
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+    function copyEmail() {
+      navigator.clipboard.writeText('m.much@nyu.edu').then(() => {
+        const t = document.getElementById('toast');
+        if (t) { t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
+      });
+    }
+  </script>
+</body>
+</html>
