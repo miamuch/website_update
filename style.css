@@ -310,8 +310,8 @@ nav.site-nav .nav-inner {
 }
 .about-section summary {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
   color: var(--accent);
   padding: 24px 0;
   cursor: pointer;
@@ -370,8 +370,8 @@ nav.site-nav .nav-inner {
 
 .section-title {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
 }
@@ -573,8 +573,8 @@ footer.site-footer {
 
 .pub-section-title {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--gray-400);
   padding-bottom: 14px;
