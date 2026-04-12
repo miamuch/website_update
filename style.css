@@ -816,9 +816,7 @@ footer.site-footer {
 }
 
 .media-item-header {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 24px;
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -839,7 +837,7 @@ footer.site-footer {
 .spotify-embed {
   border-radius: 12px;
   overflow: hidden;
-  margin-left: calc(72px + 24px);
+  margin-left: 0;
 }
 .spotify-embed iframe { display: block; width: 100%; border: none; }
 
