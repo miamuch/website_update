@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <nav class="site-nav">
+  <nav class="site-nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
       <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
@@ -24,6 +24,7 @@
       </div>
     </div>
   </nav>
+
   <section class="page-hero">
     <div class="container">
       <h1>About</h1>
@@ -33,51 +34,53 @@
   <section class="page-content">
     <div class="container">
 
-      <div class="about-grid">
-        <div class="about-label">early context &amp; home.</div>
-        <div class="about-text">
-          <p>I grew up in rural San Diego County in a family that did not orbit universities. Neither of my parents had four-year degrees. Most adults I knew worked in trades, small businesses, or service jobs. Academia was not an inherited language in my household. It was something I encountered later and had to learn from the outside in.</p>
-          <div class="pull-quote"><p>Academia was not an inherited language in my household. It was something I encountered later and had to learn from the outside in.</p></div>
-          <p>This first generation academic frame situates a lot of my research, as I spend lots of time with folks who don't have college degrees, and I spend a lot of time learning and generating ideas.</p>
-        </div>
+      <!-- Positionality intro -->
+      <div class="about-positionality">
+        <p>Most academic websites skip the personal. I think that is a mistake.</p>
+        <p>Every researcher operates from an epistemological framework. Epistemology is the study of how we know what we know — the assumptions we carry about what counts as evidence, what questions are worth asking, and whose experiences are generalizable. Those assumptions are not formed in the abstract. They come from somewhere. In Bayesian inference, you are required to declare your priors before examining data. Priors are not a flaw. They are part of how inference works. What matters is whether you name them. The same is true for researchers. Where we come from shapes the work. Acknowledging that does not compromise it. The sections below describe where I come from.</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-label">formative political years.</div>
-        <div class="about-text">
+      <!-- Section 1 -->
+      <details class="about-section">
+        <summary>early context &amp; home.</summary>
+        <div class="about-section-body">
+          <p>I grew up in rural San Diego County. Neither of my parents had a four-year degree. Most adults I knew worked in trades, small businesses, or service jobs. Academia was not something I inherited. It was something I found later and had to learn from the outside in.</p>
+          <p>Being first-generation in academic spaces means you spend a lot of time translating. I move between worlds that do not always recognize each other. That experience shapes how I write and who I write for. I try to make my work legible to people who are not already inside it.</p>
+        </div>
+      </details>
+
+      <!-- Section 2 -->
+      <details class="about-section">
+        <summary>formative political years.</summary>
+        <div class="about-section-body">
           <p>Politics in my house was not abstract. My mother was liberal. My father was politically conservative but socially progressive in ways shaped by his Christian faith. They disagreed sharply on policy but shared a moral seriousness about fairness and responsibility.</p>
-          <div class="pull-quote"><p>I grew up in a home where disagreement was expected but contempt was not.</p></div>
-          <p>I spent a lot of my formative years listening to this political tension in the household — specifically getting curious about how people navigate and communicate complicated political ideas.</p>
+          <p>Growing up in that environment made me pay attention to how people talked about politics, not just what they believed. I got curious about where political views come from. How do people with the same information, living in the same country, sometimes the same household, arrive at completely different conclusions? How much of that is identity, and how much is the information environment they inhabit? That curiosity stuck with me.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="about-grid">
-        <div class="about-label">soccer career.</div>
-        <div class="about-text">
-          <p>Before I entered academia, my entire life revolved around soccer. I was a part of the early era of the ACL epidemic that plagues women's sports. I tore my ACL three times before finishing high school. My first surgery, in eighth grade, was botched by a surgeon who did not take a young woman's athletic career seriously. Over time, I came to understand that this was not simply an individual failure.</p>
-          <div class="pull-quote"><p>It reflected broader assumptions about whose bodies and ambitions institutions take seriously.</p></div>
-          <p>I kept rebuilding and returned to play college soccer at a small four-year school that would still grant me a scholarship despite the injuries I had faced. This is how a kid born and raised in San Diego ended up at a state school all the way in Florence, South Carolina.</p>
-          <br>
-          <p>My soccer experience taught me lessons integral to my research — specifically around gender-based inequality, and persistence.</p>
+      <!-- Section 3 -->
+      <details class="about-section">
+        <summary>soccer career.</summary>
+        <div class="about-section-body">
+          <p>Before I entered academia, my entire life revolved around soccer. I was part of the early wave of the ACL epidemic that disproportionately affects women athletes. I tore my ACL three times before finishing high school. My first surgery, in eighth grade, was botched by a surgeon who did not take a young woman's athletic career seriously.</p>
+          <p>I came to understand that this was not simply an individual failure. The research, the protocols, the recovery standards had been built around male athletes. Women's sports medicine was an afterthought. That experience made gender inequality in institutions feel concrete to me before I had any theoretical language for it.</p>
+          <p>I rebuilt and earned a scholarship to play college soccer at Francis Marion University, a small state school in Florence, South Carolina. That is how a kid from San Diego ended up on the opposite coast. The school was small and genuinely pedagogy-focused. I had small classes, professors who knew my name, and a liberal arts education I did not know I needed. It shaped how I think about teaching today.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="about-grid">
-        <div class="about-label">what I study now.</div>
-        <div class="about-text">
-          <p>I sit on the cusp between millennial and Gen Z. I watched the early internet become the platform environment we now inhabit. I watched friends and neighbors drift into online spaces that felt less like communities and more like pipelines. I saw how media ecosystems could reshape identity, grievance, belonging, and political attachment in real time.</p>
-          <br>
-          <p>Today my research asks how digital media environments structure political identity and behavior. I study podcasts, gendered media spaces, ideological cues, and the subtle ways that political content travels through entertainment rather than explicitly political channels. My work combines large-scale computational text analysis with survey-trace data and intersectional modeling. I build pipelines that process tens of thousands of episodes and link them to audience data. I treat identity not as a checkbox but as a context-dependent, relational construct that shifts across environments.</p>
-          <div class="pull-quote"><p>I am interested in how people navigate systems that were not designed with their best interests in mind.</p></div>
-          <p>Because I did not grow up inside academic institutions, I care deeply about making research legible beyond them. I strive to write for public audiences and in academic pieces write as accessibly as possible while maintaining technical precision.</p>
+      <!-- Section 4 -->
+      <details class="about-section">
+        <summary>what I study now.</summary>
+        <div class="about-section-body">
+          <p>I sit on the cusp between millennial and Gen Z. I watched the early internet become the platform environment we now inhabit. I watched friends and neighbors drift into media spaces that felt less like communities and more like pipelines. I saw how political content could travel through entertainment, sports, and lifestyle media without ever announcing itself as political.</p>
+          <p>That observation is what drew me to studying gendered media spaces. My current work asks how digital information environments sort people by gender before they encounter explicitly political content, and what that sorting does to political identity and vote choice. In the podcast ecosystem, masculine and feminine audience preferences lead to structurally different political exposure. Men and women consuming media for non-political reasons end up politically informed in very different ways.</p>
+          <p>I am also drawn to methodology because of what standard tools can hide. Conventional approaches to studying identity often flatten how race, gender, and class operate together. Part of my work is building better tools for capturing that complexity. I think rigor and nuance are compatible. Most of my papers are trying to demonstrate that.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="about-grid">
-        <div class="about-label">CV.</div>
-        <div class="about-text">
-          <a class="pill" href="assets/much_CV_1_20_26.pdf" target="_blank" rel="noopener" style="display:inline-flex;">Download CV ↗</a>
-        </div>
+      <!-- CV -->
+      <div style="margin-top: 48px;">
+        <a class="pill" href="assets/much_CV_1_20_26.pdf" target="_blank" rel="noopener" style="display:inline-flex;">Download CV ↗</a>
       </div>
 
     </div>
@@ -104,6 +107,7 @@
       </div>
     </div>
   </footer>
+
   <script>
     function toggleMenu() {
       const btn = document.getElementById('menuBtn');
@@ -120,12 +124,6 @@
         dd.classList.remove('open');
       }
     });
-    function copyEmail() {
-      navigator.clipboard.writeText('m.much@nyu.edu').then(() => {
-        const t = document.getElementById('toast');
-        if (t) { t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
-      });
-    }
   </script>
 </body>
 </html>
