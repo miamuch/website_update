@@ -286,6 +286,9 @@ nav.site-nav .nav-inner {
   color: var(--black);
   max-width: 660px;
 }
+.about-text p + p {
+  margin-top: 1em;
+}
 
 /* ── ABOUT COLLAPSIBLE SECTIONS ── */
 .about-positionality {
