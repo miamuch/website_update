@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity Politics — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <a href="teaching.html" class="back-link">← Teaching</a>
+      <h1>Identity Politics</h1>
+      <div class="course-hero-meta">
+        <span><strong>Institution</strong> Brandeis University</span>
+        <span><strong>Department</strong> African &amp; African American Studies</span>
+        <span><strong>Term</strong> Fall 2022</span>
+        <span><strong>Enrollment</strong> 25 students</span>
+        <span><strong>Role</strong> Instructor of Record</span>
+        <span><strong>Level</strong> Upper-Division Writing Seminar</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="about-strip" style="padding: 0; background: none;">
+
+        <div class="about-grid">
+          <div class="about-label">Course Overview</div>
+          <div class="about-text">
+            <p>This upper-division writing seminar examined how race, gender, and sexuality shape political identity, mobilization, and representation in the United States. Taught within the African and African American Studies Department at Brandeis, the course engaged students with intersectionality as both a theoretical framework and an empirical lens, connecting Black feminist scholarship to lived political life in a seminar-sized setting.</p>
+            <p>The class had rich racial, ethnic, gender, and educational diversity, ranging from underclassmen to graduating seniors. This meant working across real disparities in both lived experience and familiarity with academic conventions. The course culminated in a twelve-page research paper that students could use as a writing sample for graduate or law school applications.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-label">Pedagogical Approach</div>
+          <div class="about-text">
+            <p>I organized the seminar around a flipped classroom model. Rather than transmitting content through lecture, I built the course around student-led presentations, small-group breakout discussions, and collective sense-making of the readings. In a course on identity politics, where students bring genuinely different relationships to the material based on their own identities, this structure turned that diversity into a teaching resource.</p>
+            <p>I transitioned the flipped classroom to a remote environment, preserving synchronous engagement through structured discussion blocks and rotating student presentations. Students presented existing literature to the class, then led breakout conversations that fed back into the plenary discussion. Topics like systemic racism, gender discrimination, and LGBTQ+ hate crimes were processed through the students' own frameworks rather than handed to them as received knowledge.</p>
+            <p>Empathy and respect formed the basis of all accommodations. My own experience navigating personal obligations alongside graduate school gave me a concrete understanding of the pressures students carry that are invisible to formal assessment, and I designed flexibility into the course structure accordingly.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-label">Student Outcomes</div>
+          <div class="about-text">
+            <p>The highest-rated item in my instructor evaluations was respecting student ideas (4.91 / 5), which reflects the flipped classroom's emphasis on valuing what each student brings to the room.</p>
+
+            <div class="pull-quote">
+              <p>"I found the group assignments and in-class presentations valuable. It was nice to hear new content and new perspectives from different individuals."</p>
+            </div>
+
+            <p>Students engaged deeply with one another's perspectives across a diverse classroom, which was the central goal of the course design. The evaluation scores and student comments confirmed that student-led learning structures work well for seminar courses on identity, where the material is not abstract.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-cta-label">Connect</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+          <div class="pulse-wrap">
+            <span class="pulse-dot"></span>
+            Available for media commentary &amp; public writing
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

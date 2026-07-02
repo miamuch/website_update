@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to American Government — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <a href="teaching.html" class="back-link">← Teaching</a>
+      <h1>Introduction to<br>American Government</h1>
+      <div class="course-hero-meta">
+        <span><strong>Institution</strong> UC Irvine</span>
+        <span><strong>Term</strong> Spring 2024</span>
+        <span><strong>Enrollment</strong> 300 students</span>
+        <span><strong>Role</strong> Instructor of Record</span>
+        <span><strong>Format</strong> Asynchronous / Remote</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="about-strip" style="padding: 0; background: none;">
+
+        <div class="about-grid">
+          <div class="about-label">Course Overview</div>
+          <div class="about-text">
+            <p>This course addressed the fundamentals of American politics for 300 undergraduate students at UC Irvine, covering constitutional design, the three branches of government, public opinion, voting and elections, political parties, and the role of media in shaping political life. The course used <em>OpenStax American Government 3E</em>, a peer-reviewed, openly licensed textbook available free of charge, which removed cost as a barrier for a large, economically diverse student body.</p>
+            <p>I designed the course with accessibility as the primary goal. Given UCI's significant international student population, I built explicit scaffolding for students with varying levels of prior exposure to American politics and for non-native English speakers. The syllabus used clear workload expectations, a single openly licensed textbook, and a well-organized Canvas space to reduce friction for students navigating the hidden curriculum of a 300-person lecture.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-label">Pedagogical Approach</div>
+          <div class="about-text">
+            <p>Rather than prohibiting generative AI outright, I designed essay prompts that required students to quote directly from the course text and connect abstract concepts to their own observations in ways that AI cannot replicate. This kept assessment meaningful while teaching students to think critically about AI-assisted writing.</p>
+            <p>Each week, students submitted handwritten or typed notes from the assigned reading as a low-stakes participation grade. This gave me and my teaching assistants a concrete signal of engagement in a class where attendance is otherwise invisible, and it gave students a structured reason to read carefully.</p>
+            <p>I used Discord as the course's primary communication platform so students could ask questions in a space they already use. Near-immediate response time from me and my TAs created a sense of classroom community that is normally difficult to achieve at this scale, and students found it more approachable than email or Canvas discussion boards.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-label">Student Outcomes</div>
+          <div class="about-text">
+            <p>In formal course evaluations, 68% of students said they would recommend me to another student.</p>
+
+            <div class="pull-quote">
+              <p>"I think how Professor Much gave us a note upload assignment every week contributed most to my learning… With this assignment, the material is easier for me to understand."</p>
+            </div>
+
+            <div class="pull-quote">
+              <p>"One of the strong points of the course was the class group chat. The simultaneous response from the professor."</p>
+            </div>
+
+            <p>Students consistently pointed to the note upload assignments and the Discord channel as the features that most shaped their experience. Both were low-overhead interventions that made a large asynchronous course feel more structured and more responsive.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-cta-label">Connect</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+          <div class="pulse-wrap">
+            <span class="pulse-dot"></span>
+            Available for media commentary &amp; public writing
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

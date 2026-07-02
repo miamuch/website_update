@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantitative Methods Teaching — Melina Much, PhD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DR.<br>MUCH</a>
+      <button class="nav-menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="publications.html">Publications</a>
+        <a href="wip.html">WIP</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <a href="teaching.html" class="back-link">← Teaching</a>
+      <h1>Teaching<br>Quantitative Methods</h1>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="about-strip" style="padding: 0; background: none;">
+
+        <!-- Research Methods for Social Science (CPP) -->
+        <div class="about-grid" style="padding-top: 0;">
+          <div class="about-label">
+            Cal Poly Pomona<br>
+            <span style="font-weight: 400; color: var(--gray-400);">20 students · twice<br>Instructor of Record<br>2023–2024</span>
+          </div>
+          <div class="about-text">
+            <h2 style="font-family: var(--font-sans); font-weight: 700; font-size: 22px; letter-spacing: -0.03em; margin-bottom: 20px;">Research Methods for Social Science</h2>
+            <p>During graduate school, I taught Political Science Research Methods at California Polytechnic University at Pomona twice as the instructor of record. The course covered best practices in research design, including forming a research question, reviewing the literature, operationalization, and data collection, then moved into applied statistics ranging from descriptive statistics through linear regression.</p>
+            <p>One of the course's main changes was helping CPP transition this sequence from SPSS to R. R is more accessible as an open-source tool, better prepares students for graduate work and industry positions, and has a wider user community for self-directed learning. I introduced R through iterative, hands-on problem sets so students built fluency by doing rather than by watching.</p>
+            <p>Neither section used a commercial textbook. I produced a collaborative set of course materials and instructional videos with CPP faculty to keep the course affordable. For a course that many non-majors take without intending to use statistics professionally, removing the textbook cost mattered.</p>
+          </div>
+        </div>
+
+        <!-- UCI Methods Bootcamp -->
+        <div class="about-grid" id="bootcamp">
+          <div class="about-label">
+            UC Irvine<br>
+            <span style="font-weight: 400; color: var(--gray-400);">Annual · incoming PhD cohort<br>Founder &amp; Instructor<br>2021–2024</span>
+          </div>
+          <div class="about-text">
+            <h2 style="font-family: var(--font-sans); font-weight: 700; font-size: 22px; letter-spacing: -0.03em; margin-bottom: 20px;">Political Science Methods Bootcamp</h2>
+            <p>I founded and co-designed UCI's Political Science Methods Bootcamp for the incoming first-year doctoral cohort. The course came out of a gap I noticed through my own experience and through mentoring incoming students: there is a consistent mismatch between what Political Science PhD programs expect students to know about quantitative methods and what students from non-quantitative undergraduate backgrounds actually know when they arrive.</p>
+            <p>That gap falls hardest on women, students of color, and first-generation graduate students, compounding the adjustment challenges that already make the first year of doctoral study difficult. The Bootcamp was designed to address this by building community and shared baseline knowledge before the formal methods sequence begins.</p>
+            <p>The week-long intensive covers R programming from the ground up, including data structures, visualization, data cleaning, and regression analysis. By the time the formal statistics sequence starts, students enter with working code, familiarity with common error messages, and peers they have already learned alongside. Three years of running the course produced visible changes in how incoming cohorts engage with quantitative methodology in the department.</p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">DR.<br>MUCH</div>
+          <div class="footer-cta-label">Connect</div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/melinamuch/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://bsky.app/profile/melinamuch.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          </div>
+          <a href="contact.html" class="btn-cta">Get in Touch</a>
+          <div class="pulse-wrap">
+            <span class="pulse-dot"></span>
+            Available for media commentary &amp; public writing
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            <a href="mailto:m.much@nyu.edu">m.much@nyu.edu</a><br>
+            <a href="https://csmapnyu.org/" target="_blank" rel="noopener">Center for Social Media, AI, and Politics</a><br>
+            New York University
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      btn.classList.toggle('open');
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      const btn = document.getElementById('menuBtn');
+      const dd  = document.getElementById('navDropdown');
+      if (!btn || !dd) return;
+      if (!btn.contains(e.target) && !dd.contains(e.target)) {
+        btn.classList.remove('open');
+        dd.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
