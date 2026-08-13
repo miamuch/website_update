@@ -636,6 +636,25 @@ footer.site-footer {
   border-radius: 4px;
 }
 
+.pub-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.pub-badge--solo {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.pub-badge--first {
+  color: var(--white);
+  background: var(--black);
+}
+
 .pub-authors {
   font-size: 15px;
   color: var(--gray-600);
