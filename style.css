@@ -646,8 +646,8 @@ footer.site-footer {
 }
 
 .pub-badge--solo {
-  color: var(--accent);
-  background: var(--accent-light);
+  color: var(--white);
+  background: #355f7c;
 }
 
 .pub-badge--first {
