@@ -902,6 +902,9 @@ footer.site-footer {
 }
 
 .home-research-figure {
+  width: 100%;
+  max-width: 620px;
+  justify-self: center;
   padding: 18px;
   background: var(--warm);
   border-radius: 4px;
@@ -916,10 +919,11 @@ footer.site-footer {
   display: block;
   margin-bottom: 14px;
   font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
   letter-spacing: 0;
+  text-align: center;
   color: var(--black);
 }
 
