@@ -888,6 +888,14 @@ footer.site-footer {
   margin-bottom: 18px;
 }
 
+.home-research-subtitle {
+  max-width: 620px;
+  margin: -6px 0 18px;
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.35;
+  color: var(--gray-600);
+}
+
 .home-research-copy {
   color: var(--gray-600);
   font-size: 15px;
