@@ -370,6 +370,24 @@ nav.site-nav .nav-inner {
   margin-top: 18px;
 }
 
+/* ── ABOUT FIGURES ── */
+.about-figure {
+  margin: 30px 0 4px;
+}
+.about-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: var(--gray-50);
+}
+.about-figure--inset {
+  max-width: 400px;
+}
+@media (max-width: 640px) {
+  .about-figure--inset { max-width: 100%; }
+}
+
 /* ── PULL QUOTE ── */
 .pull-quote {
   border-left: 3px solid var(--accent);
