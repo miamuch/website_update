@@ -664,10 +664,10 @@ footer.site-footer {
 }
 
 .pub-venue {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--gray-400);
-  letter-spacing: 0.02em;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .pub-status {
